@@ -31,7 +31,7 @@ model.compile(optimizer='sgd', loss='sparse_categorical_crossentropy', metrics=[
 
 cb = [
     tf.keras.callbacks.EarlyStopping(patience=2),
-    #tf.keras.callbacks.TensorBoard('./logs_keras')
+    tf.keras.callbacks.TensorBoard('./logs_keras')
 ]
 
 # Sets up a timestamped log directory.
